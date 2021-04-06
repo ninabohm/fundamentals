@@ -1,3 +1,8 @@
+/*************************************************************************
+ *  Converts a number from input into roman numeric system using recursion.
+
+ *************************************************************************/
+
 public class Roman {
     public static void main(String[] args) {
 
