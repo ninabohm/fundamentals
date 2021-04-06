@@ -2,14 +2,14 @@ public class Roman {
     public static void main(String[] args) {
 
         if (args.length == 0) {
-            System.out.println("Bitte eine Zahl als Parameter angeben.");
+            System.out.println("Please provide a number as parameter");
             return;
         }
 
         int input = Integer.parseInt(args[0]);
 
         if (input == 0) {
-            System.out.println("Die Zahl muss zwischen 1 und 5000 liegen.");
+            System.out.println("The number needs to be between 1 und 5000.");
         }
 
         runTests();
@@ -37,7 +37,7 @@ public class Roman {
 
     public static String generateRomanNumber(int value) {
         if (value > 5000) 
-            return "Die Zahl muss zwischen 1 und 5000 liegen.";
+            return "The number needs to be between 1 und 5000.";
 
         if (value - 1000 >= 0) 
             return "M" + generateRomanNumber(value - 1000);
@@ -194,7 +194,7 @@ public class Roman {
 
     public static void test14() {
         int input = 5500;
-        String expectedOutput = "Die Zahl muss zwischen 1 und 5000 liegen.";
+        String expectedOutput = "The number needs to be between 1 und 5000.";
         String actualOutput = generateRomanNumber(input);
         if(!actualOutput.equals(expectedOutput))
             System.out.println("Test 14 failed");
